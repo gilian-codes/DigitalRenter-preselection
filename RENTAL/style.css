@@ -1,0 +1,470 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.nav-bar {
+    display: flex;
+    
+    flex-direction: row;
+    padding: 0 10px 0 10px;
+    margin: 20px 50px;
+}
+.logo-div {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0 10px 0;
+    justify-content: center;
+    align-items: center;
+}
+.logo-div > img {
+    margin-right: 5px;
+}
+.logo-div > p {
+    font-weight: bold;
+    color: #5e8ea2;
+}
+.page-divs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0 10px 0;
+    margin-left: auto;
+}
+.links {
+    margin: 0 10px 0 10px;
+}
+.active {
+    background-color: #5e8ea2;
+    color: white;
+    padding: 13px 20px;
+    border-radius: 5px;
+}
+.landing-div {
+    display: flex;
+    background-image: url('./assets/Estately.png');
+    background-size: cover;
+    height: 85vh;
+    margin: 0 70px 150px 70px;
+    border-radius: 15px;
+    flex-direction: column;
+}
+.sub-div {
+    width: 55%;
+    padding: 70px 70px;
+}
+.sub-div > h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.sub-div > p {
+    color: grey;
+    font-weight: 500;
+    font-size: small;
+    line-height: 1.5rem;
+    margin-bottom: 40px;
+}
+.style-div {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.style-div > img {
+    width: 50px;
+}
+.dollar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    width: 20px;
+    padding: 5px;
+    font-size: x-small;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: #5e8ea2;
+    color: white;
+}
+.value {
+    color: #5e8ea2;
+    font-weight: bold;
+    font-size: small;
+    width: 50px;
+}
+.p-text {
+    color: grey;
+    font-size: small;
+}
+span {
+    color: #5e8ea2;
+    font-weight: bold;
+}
+.overlay {
+    display: flex;
+    flex-direction: column;
+    width: 87%;
+    margin: 0 auto;
+}
+.overlay-tabs {
+    display: flex;
+    flex-direction: row;
+    background-color: #7bb4c7;
+    width: max-content;
+    border-radius: 10px 10px 0 0;
+    color: grey;
+    font-weight: 500;
+}
+.overlay-tabs > .active {
+    background-color: white;
+    border-radius: 10px 10px 0 0;
+    color: grey;
+    font-weight: 500;
+}
+.overlay-tabs > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 13px 35px;
+}
+.overlay-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 0 10px 10px 10px;
+    padding: 30px 35px;
+    box-shadow: 3px 5px 8px rgb(226, 226, 226);
+}
+.ob-div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px 0;
+}
+.ob-div-title {
+    font-size: small;
+    color: gray;
+    font-weight: 500;
+}
+.ob-div-label {
+    font-size: large;
+    font-weight: bold;
+    color: #5e8ea2;
+}
+.search-btn {
+    background-color: #5e8ea2;
+    justify-content: center;
+    align-items: center;
+    padding: 0 35px;
+    border-radius: 8px;
+    color: white;
+    font-weight: 500;
+}
+.service-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 70px 100px 70px;
+}
+.service{
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0;
+    width: 220px;
+    border-radius: 10px;
+    box-shadow: 3px 5px 8px rgb(226, 226, 226);
+    padding: 20px 20px;
+}
+.service > .head-div {
+    display: flex;
+    flex-direction: row;
+}
+.head-div {
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 0 20px;
+    /* padding: 10px 0; */
+}
+.head-div > .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5e8ea2;
+    height: 40px;
+    width: 60px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+
+}
+.head-div > .i-title {
+    display: flex;
+    width: 180px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    color: #5e8ea2;
+}
+.service > p {
+    color: grey;
+    font-weight: 500;
+    font-size: small;
+}
+.sec3 {
+    text-align: center;
+    margin-bottom: 100px;
+}
+.sec3 > h1 {
+    color: #5e8ea2;
+}
+.sec3 > p {
+    color: #243339;
+}
+.sec4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 70px 200px 70px;
+}
+.sec4 > .cards {
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    box-shadow: 3px 5px 8px rgb(226, 226, 226);
+    border-radius: 10px;
+    margin: 10px;
+}
+.cards > .card-img{
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+}
+
+.card-img1{
+    background-image: url('./assets/kitchen1.jpg');
+    background-size: cover;
+}
+
+.card-img2{
+    background-image: url('./assets/kitchen2.jpg');
+    background-size: cover;
+}
+.card-img3{
+    background-image: url('./assets/kitchen3.jpg');
+    background-size: cover;
+}
+.card-img4{
+    background-image: url('./assets/bed.jpg');
+    background-size: cover;
+}
+.avatar{
+    width: 40px;
+    height: 40px;
+   
+    border-radius: 50px;
+    border: 2px solid white;
+    position: absolute;
+    bottom: -20px;
+    right: 20px;
+    
+}
+.avatar1{
+    background-image: url('./assets/female.jpg');
+    background-size: cover;
+}
+
+.avatar2{
+    background-image: url('./assets/female2.jpg');
+    background-size: cover;
+}
+
+.avatar3{
+    background-image: url('./assets/male.jpg');
+    background-size: cover;
+}
+
+.avatar4{
+    background-image: url('./assets/male2.jpg');
+    background-size: cover;
+}
+.card-img3{
+    background-image: url('./assets/kitchen3.jpg');
+    background-size: cover;
+}
+.card-img > .btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+}
+.btns > .btn1 {
+    background-color: #5e8ea2;
+    padding: 5px 10px;
+    font-size: small;
+    border-radius: 5px;
+}
+.btns > .btn2 {
+    background-color: #415863;
+    padding: 5px 10px;
+    font-size: small;
+    border-radius: 5px;
+}
+.access {
+    padding: 15px 10px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.456);
+    border-left: 1px solid rgba(128, 128, 128, 0.456);
+    border-right: 1px solid rgba(128, 128, 128, 0.456);
+}
+.access > .rooms-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.access-title {
+    color: #5e8ea2;
+    margin-bottom: 10px;
+}
+.access-body {
+    color: grey;
+    margin-bottom: 10px;
+    font-size: small;
+}
+.price-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px 10px;
+    border-radius: 0 0 10px 10px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.456);
+    border-left: 1px solid rgba(128, 128, 128, 0.456);
+    border-right: 1px solid rgba(128, 128, 128, 0.456);
+}
+.price-div > .img {
+    height: 20px;
+    width: 20px;
+ 
+    border-radius: 5px;
+}
+.rooms-div > .room {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 8px 0;
+}
+.room > .room-img {
+    height: 20px;
+    width: 20px;
+  
+    border-radius: 5px;
+}
+.room > p {
+    font-size: small;
+    color: gray;
+}
+.sec5{
+display: flex;
+flex-direction:row ;
+margin: 0 70px;
+gap: 0 30px;
+}
+.sec5-left{
+    background-image: url('./assets/Estately.png');
+    background-size: cover;
+    width: 70%;
+    padding: 20px;
+    border-radius: 15px;
+    position: relative;
+    height: 300px;
+   
+}
+.left-div{
+   position: absolute;
+   background-color: #5e8ea2;
+   border-radius: 0 10px  10px 10px;
+   padding: 10px;
+   color: white;
+   font-size: small;
+   right: -20px;
+   width: 170px;
+
+}
+.sec5-right > .p2{
+font-size: 30px;
+font-weight: bold;
+color: #415863;
+}
+
+.sec5-right > .p3{
+    font-size: smaller;
+    color: #5e8ea2;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.buttons >.button1{
+    background-color: #415863;
+    background-image: url('./assets/icons8-ok-48.png');
+    background-size: cover;
+    height: 40px;
+    width: 40px;
+    border-radius: 7px; 
+    padding: 8px 12px;   
+}
+
+.buttons >.button2{
+    background-color: #415863;
+    height: 40px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: white;  
+    width: 180px;
+    padding: 0 35px;
+  
+ 
+}
+
+.buttons >.button3{
+    background-color: #415863;
+    background-image: url('./assets/icons8-bag-64.png');
+    background-size: cover;
+    height: 40px;
+    width: 40px;
+    border-radius: 7px;
+    padding: 8px 12px;
+}
+
+.sec6{
+    display: flex;
+    flex-direction: row;
+}
+.sec6-p1 {
+    
+   margin: 60px 40px;
+   color: #5e8ea2;
+   position: absolute;
+   padding: 10px; 
+   right: 20px;
+   font-size: small;
+   width: 530px;
+}
+
+.sec6-p3{
+    margin: 60px 40px;
+    color: #5e8ea2;
+    position: absolute;
+    padding: 90px; 
+    right: 6px;
+    font-size: small;
+    width:623.5px;
+    font-weight: bold;
+}
